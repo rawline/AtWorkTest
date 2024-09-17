@@ -5,8 +5,8 @@ import { RootState, AppDispatch } from '../../redux/store';
 import { updateCard } from '../../redux/staffSlice';
 import { UserCard } from '../../services/services';
 import styles from './CardDetailsPage.module.scss'; // Подключаем стили
-import bigPhoto from '../../assets/bigPhoto.png';
-import success from '../../assets/success.svg'
+import bigPhoto from '../../../public/bigPhoto.png';
+import success from '../../../public/success.svg'
 
 const CardDetailsPage: React.FC = () => {
   const { id } = useParams<{ id: string }>(); // Получаем параметр id из URL

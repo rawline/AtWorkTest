@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { UserCard } from '../../services/services';
 import classNames from 'classnames'; // Для удобного управления классами
 import styles from './card.module.scss';
+import img from '../../../public/rayul-_M6gy9oHgII-unsplash (1) 1.png'
 
 interface CardProps {
     card: UserCard;
@@ -32,7 +33,7 @@ const Card: React.FC<CardProps> = ({ card, onArchive, onActive }) => {
 
     return (
         <div className={styles.card}>
-            <img className={imgClass} src='src/assets/rayul-_M6gy9oHgII-unsplash (1) 1.png' alt="img" />
+            <img className={imgClass} src={img} alt="img" />
 
             <div className={styles.textBlock}>
                 <div className={styles.cardTitle}>
