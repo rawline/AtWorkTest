@@ -2,6 +2,7 @@
   "name": "at-work_test",
   "private": true,
   "version": "0.0.0",
+  "homepage": "https://rawline.github.io/AtWorkTest",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -31,6 +32,6 @@
     "typescript": "^5.5.3",
     "typescript-eslint": "^8.0.1",
     "vite": "^5.4.1"
-  },
-  "homepage": "https://rawline.github.io"
+  }
+  
 }
