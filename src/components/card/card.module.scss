@@ -1,0 +1,150 @@
+.card{
+    display: flex;
+    justify-content: space-between;
+    width: 360px;
+    height: 168px;
+    background-color: #FDFDFD;
+    border-radius: 16px;
+    padding: 24px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    position: relative;
+    transition: all 0.3s;
+}
+
+.cardTitle{
+    display: flex;
+    width: 180px;
+    justify-content: space-between;
+    margin: 0;
+}
+
+.cardMenu{
+    display: block;
+    width: 4px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.cardMenu:hover{
+    fill: #22A0BC;
+}
+
+.img{
+    display: block;
+    width: 112px;
+    height: 120px;
+}
+
+.title{
+    color: #22A0BC;
+    font-size: 18px;
+    margin: 0;
+}
+
+.subTitle{
+    font-size: 16px;
+    margin-top: 0;
+    margin-bottom: 42px;
+}
+
+.cardCity{
+    font-size: 14px;
+    color: #9C9C9C;
+}
+
+.dropdown{
+    top: 50px;
+    right: 20px;
+    position: absolute;
+    width: 200px;
+    height: 146px;
+    background-color: #FDFDFD;
+    border: 2px solid #ccc;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 0 16px 20px;
+    z-index: 10;
+}
+
+.dropdownArchived{
+    box-sizing: border-box;
+    height: 54px;
+}
+
+.grayscale {
+    filter: grayscale(100%);
+  }
+
+.archivedCardTitle{
+    color: #595959;
+}
+
+.archivedSubTitle{
+    color: #9C9C9C;
+}
+
+.archivedCity{
+    color: #DADADA;
+}
+
+.dropdownItem{
+    cursor: pointer;
+    text-decoration: none;
+    display: flex;
+    width: 100%;
+    height: 38px;
+    align-items: center;
+    color: #161616;
+    padding: auto;
+    &:hover{
+        color: #22A0BC;
+    }
+}
+
+@media (max-width: 400px) {
+    .card{
+        flex-direction: column;
+        width: 162px;
+        height: 242px;
+        padding: 16px;
+    }
+
+    .img{
+        width: 130px;
+        height: 120px;
+        border-radius: 8px;
+        object-fit: cover;
+        margin-bottom: 16px;
+    }
+
+    .cardTitle{
+        width: 100%;
+    }
+
+    .subTitle{
+        font-size: 14px;
+        margin-top: 0;
+        margin-bottom: 12px;
+    }
+
+    .dropdown{
+        top: 200px;
+        right: -10px;
+        width: 150px;
+        height: 137px;
+    }
+
+    .dropdownItem{
+        height: 35px;
+        font-size: 14;
+    }
+    
+    .dropdownArchived{
+        box-sizing: border-box;
+        height: 54px;
+    }
+}

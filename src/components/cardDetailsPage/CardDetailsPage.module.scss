@@ -1,0 +1,275 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  padding: 20px;
+  width: 1160px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  font-family: "Manrope", sans-serif;
+}
+
+.backButton {
+  background: none;
+  border: none;
+  font-size: 16px;
+  color: #333;
+  cursor: pointer;
+
+}
+
+.backBtn{
+  cursor: pointer;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.line{
+  border: 1px solid #DADADA;
+  margin-bottom: 24px;
+}
+
+.profileContainer {
+  display: flex;
+  margin: 0 auto;
+  gap: 40px;
+}
+
+.profileImageSection {
+  display: flex;
+  width: 360px;
+  height: 816px;
+  flex-direction: column;
+  align-items: center;
+  background-color: #FDFDFD;
+  padding: 40px;
+  box-sizing: border-box;
+  border-radius: 16px;
+}
+
+.profileImage {
+  width: 280px;
+  height: 485px;
+  border-radius: 10px;
+}
+
+.profileMenu {
+  list-style: none;
+  width: 280px;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.profileMenu li {
+  font-size: 16px;
+  margin-bottom: 24px;
+  cursor: pointer;
+  color: #333;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 12px;
+}
+
+.profileDetailsSection {
+  width: 760px;
+  height: 813px;
+  background-color: #FDFDFD;
+  padding: 40px;
+  box-sizing: border-box;
+  border-radius: 16px;
+}
+
+.title{
+  margin: 0;
+}
+
+.profileDetailsSection h2 {
+  margin-bottom: 20px;
+}
+
+.form {
+  width: 420px;
+  height: 582px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form label {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 5px;
+  color: #161616;
+}
+
+.form input {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 2px solid #ccc;
+  border-radius: 50px;
+  font-size: 14px;
+  height: 42px;
+  margin-bottom: 24px;
+  width: 420px;
+  font-family: "Manrope", sans-serif;
+  color:#161616;
+  font-weight: 600;
+}
+
+.form input::placeholder{
+  color: #595959;
+}
+
+.saveButton {
+  background-color: #161616;
+  width: 136px;
+  height: 46px;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 14px;
+  font-family: "Manrope", sans-serif;
+  transition: all 0.3s;
+  &:hover{
+    background-color: #F4F4F4;
+    color: #9c9c9c;
+  }
+}
+
+.popupOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 100;
+}
+
+.popup {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 50%;
+  left: 50%;
+  width: 310px;
+  height: 211px;
+  transform: translate(-50%, -50%);
+  background-color: #FDFDFD;
+  padding: 20px;
+  border-radius: 16px;
+  z-index: 101;
+}
+
+.popup p {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.closePopup {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  cursor: pointer;
+  font-size: 40px;
+}
+
+.success{
+  margin: 0 auto;
+}
+
+.popUpWrapper{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+}
+
+@media (max-width: 1260px) {
+  .container {
+    width: 80%;
+  }
+
+  .profileDetailsSection {
+    width: 70%;
+  }
+
+  .form {
+    width: 100%;
+  }
+
+  .form input {
+    width: 80%;
+  }
+
+
+}
+
+@media (max-width: 920px) {
+  .profileImage{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+  }
+  .profileContainer {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .profileImageSection {
+    width: 100%;
+  }
+
+  .profileDetailsSection {
+    width: 100%;
+  }
+}
+
+@media (max-width: 400px) {
+  .profileImage{
+    width: 287px;
+    height: 187px;
+    object-fit: cover;
+  }
+
+  .container{
+    padding: 0;
+    width: 90%;
+  }
+
+  .profileContainer {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .profileImageSection {
+    padding: 28px;
+    width: 100%;
+    height: 480px;
+  }
+
+  .profileDetailsSection {
+    width: 100%;
+    padding: 28px;
+  }
+
+  .form input {
+    width: 90%;
+  }
+
+  .saveButton {
+    width: 100%;
+
+  }
+}
+
+
+  
