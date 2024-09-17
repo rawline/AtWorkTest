@@ -53,6 +53,22 @@
     color: #9C9C9C;
 }
 
+.grayscale {
+    filter: grayscale(100%);
+}
+
+.archivedCardTitle{
+    color: #595959;
+}
+
+.archivedSubTitle{
+    color: #9C9C9C;
+}
+
+.archivedCity{
+    color: #DADADA;
+}
+
 .dropdown{
     top: 50px;
     right: 20px;
@@ -73,22 +89,6 @@
 .dropdownArchived{
     box-sizing: border-box;
     height: 54px;
-}
-
-.grayscale {
-    filter: grayscale(100%);
-  }
-
-.archivedCardTitle{
-    color: #595959;
-}
-
-.archivedSubTitle{
-    color: #9C9C9C;
-}
-
-.archivedCity{
-    color: #DADADA;
 }
 
 .dropdownItem{
